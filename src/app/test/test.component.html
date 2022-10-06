@@ -1,0 +1,36 @@
+<div class="main">
+    <div class="fname">
+        <label for="text">Firstname</label>
+        <input type="text" placeholder="First Name" [(ngModel)]="getfname"> &nbsp;&nbsp;
+ 
+    <label for="text">Lastname</label>
+      <input type="text" placeholder="Last Name" [(ngModel)]="getlname">
+  </div><br>
+
+  <div class="dob">
+    <label for="Date">Dob</label>
+      <input type="date" placeholder="Date of Birth" [(ngModel)]="getdob"> &nbsp;&nbsp;
+    <label for="text">Email</label>
+      <input type="email" placeholder="email" [(ngModel)]="getemail">
+  </div><br>
+
+  <div class="mobile">
+    <label for="Number">Mobile Number</label>
+      <input type="number" placeholder="Mobile Number" [(ngModel)]="getmobile">  &nbsp;&nbsp;
+    <label for="Add">Address</label>
+      <input type="text" placeholder="Address" [(ngModel)]="getaddress">
+  </div><br>
+
+  <div class="btn">
+    <button [style]="css" (click)="cancle()">cancel</button>  &nbsp;&nbsp;
+    <button [style]="css" (click)="changename()">submit</button>
+  </div>
+ 
+</div>
+<p>{{first}}</p>
+<p>{{last}}</p>
+<p>{{dob}}</p>
+<p>{{email}}</p>
+<p>{{mobile}}</p>
+<p>{{address}}</p>
+
